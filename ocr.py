@@ -4,7 +4,7 @@ def extract_text(image):
     try:
         text = pytesseract.image_to_string(
             image,
-            lang="eng"
+            lang="tam+eng"
         )
 
         return text.strip()
